@@ -1,0 +1,27 @@
+[package]
+name = "plotlab"
+version = "0.3.0"
+edition = "2024"
+license = "MIT"
+
+[dependencies]
+eframe = { version = "=0.33.3", default-features = false, features = ["default_fonts", "glow", "accesskit", "x11", "wayland"] }
+egui_plot = "=0.34.1"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = { version = "1.0", features = ["float_roundtrip"] }
+rfd = "0.17"
+image = { version = "0.25", default-features = false, features = ["png"] }
+csv = "1.4"
+calamine = "0.36"
+encoding_rs = "0.8"
+nalgebra = "0.34"
+levenberg-marquardt = "0.15"
+statrs = { version = "0.19", default-features = false }
+plotters = { version = "0.3", default-features = false, features = ["svg_backend", "line_series", "point_series"] }
+svg2pdf = "0.13"
+resvg = "0.45"
+png = "0.17"
+zip = { version = "8", default-features = false, features = ["deflate"] }
+
+[profile.release]
+opt-level = 2

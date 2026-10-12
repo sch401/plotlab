@@ -1,0 +1,9 @@
+/target/
+__pycache__/
+/.cache/
+/verification/
+/PlotLab*.exe
+/last-session*.plab
+*.plab
+/smoke-test-error.txt
+*.tmp
